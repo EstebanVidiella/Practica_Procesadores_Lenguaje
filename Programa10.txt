@@ -1,0 +1,46 @@
+void main {
+ int i = 2, f_0 = 0, f_1 = 1, f_2;
+ while (i <= 10) {
+ f_2 = f_1 + f_0;
+ f_0 = f_1;
+ f_1 = f_2;
+ i = i + 1;
+ }
+ print(f_2);
+}
+
+/*Código de la máquina de pila
+lvalue i
+push 2
+=
+lvalue f_0
+push 0
+=
+lvalue f_1
+push 1
+=
+label_0:
+rvalue i
+push 10
+<=
+gofalse label_1
+lvalue f_2
+rvalue f_1
+rvalue f_0
++
+=
+lvalue f_0
+rvalue f_1
+=
+lvalue f_1
+rvalue f_2
+=
+lvalue i
+rvalue i
+push 1
++
+=
+goto label_0
+label_1:
+print f_2
+halt*/
