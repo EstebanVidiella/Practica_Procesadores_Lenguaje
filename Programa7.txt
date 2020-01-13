@@ -1,0 +1,33 @@
+void main {
+ int y = 2, m = 1, d = 3;
+ int x = (14 * y) / 4 + (16 * m + 4) / 2 + d;
+}
+/*Código de la máquina de pila
+lvalue y
+push 2
+=
+lvalue m
+push 1
+=
+lvalue d
+push 3
+=
+lvalue x
+push 14
+rvalue y
+*
+push 4
+/
+push 16
+rvalue m
+*
+push 4
++
+push 2
+/
++
+rvalue d
++
+=
+halt
+*/
