@@ -1,0 +1,21 @@
+void main {
+ int a, b, c, d;
+ int d = 2;
+ /*
+ * este programa declara la variable 'd' dos veces
+ * la variable 'x' no se declara
+ */
+ a = 1;
+ b = 2;
+ c = (25 * (2 + a)) / (2 * b);
+ d = a + 2*b + c;
+ x = a + b + c + d;
+}
+/*Error en la línea 3, identificador 'd' ya declarado
+Error en la línea 15, identificador 'x' no declarado
+Tabla de símbolos
+<'a', int>
+<'b', int>
+<'c', int>
+<'d', int>
+*/
