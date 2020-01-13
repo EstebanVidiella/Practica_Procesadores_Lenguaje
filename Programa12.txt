@@ -1,0 +1,42 @@
+void main {
+ int si = 0, sp = 0;
+
+ int i = 1;
+
+ while (i <= 10) {
+ if (i % 2 == 0) {
+ si = si + i;
+ } else {
+ sp = sp + i;
+ }
+ i = i + 1;
+ }
+ print(si);
+ print(sp);
+}
+/*Código de la máquina de pila
+lvalue si =
+push 0 goto label_3
+= label_2:
+lvalue sp lvalue sp
+push 0 rvalue sp
+= rvalue i
+lvalue i +
+push 1 =
+= label_3:
+label_0: lvalue i
+rvalue i rvalue i
+push 10 push 1
+<= +
+gofalse label_1 =
+rvalue i goto label_0
+push 2 label_1:
+% print si
+push 0 print sp
+== halt
+gofalse label_2
+lvalue si
+rvalue si
+rvalue i
++
+*/
