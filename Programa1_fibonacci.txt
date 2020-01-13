@@ -14,3 +14,9 @@ void main {
  i = i + 1;
  }
 }
+
+/*Programa compilado correctamente
+Tabla de símbolos
+<'i', int>
+<'f', array (int, 10)>
+*/
